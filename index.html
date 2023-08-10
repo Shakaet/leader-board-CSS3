@@ -6,6 +6,8 @@
     <title>Leader WebSite</title>
     <link rel="stylesheet" href="style/style.css">
 
+    <script src="https://kit.fontawesome.com/7ee369b1ec.js" crossorigin="anonymous"></script>
+
     <style>
 
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
@@ -108,16 +110,141 @@
             text-decoration: none;
         }
 
-        .course img{
-
+        .course .course-banner img{
+            
             width: 266px;
             height: 141px;
-            flex-shrink: 0;
+    
 
         }
-        .course{
-            display:flex;
+
+        .course-title{
+            color: #1E1E1E;
+            font-size: 20.034px;
         }
+
+        .course-author{
+
+            color: #ED6B4F;
+            font-size: 14.691px;
+        }
+
+        .fa-star{
+
+            font-size: 12px;
+        }
+
+        .fa-star.filled{
+
+            color:#FFC014;
+        }
+
+        .fa-star.empty{
+
+            color:#AEAEAE;
+        }
+
+        .course-info{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .value{
+            color: #A2A2A2;
+            font-size: 14.691px;
+
+        }
+
+        .course-duration{
+
+            background-color: var(--ff-4-a-60, #FF4A60);
+            border-radius: 10px;
+            padding-top: 20px;
+            padding-top: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            font-size: 14.691px;
+
+        }
+
+        .courses{
+            display: flex;
+              /* grid-template-columns: repeat(3,1fr);  */
+             grid-column-gap: 24px; 
+        }
+
+        @media only screen and (max-width:688px){
+            .container{
+
+                width: 100%;
+            }
+            .players{
+                grid-template-columns: repeat(1,1fr);
+            }
+
+            .player{
+                flex-direction: column;
+            }
+
+            .blog{
+                flex-direction: column;
+            }
+
+            .courses{
+
+                grid-template-columns: repeat(1,fr);
+                flex-direction: column;
+
+            }
+
+
+            .blogs{
+                grid-template-columns: repeat(1,1fr);
+            }
+            
+        }
+
+        @media only screen and (min-width:689px) and (max-width:922px){
+            
+
+            .container{
+
+                    width: 100%;
+                    }
+                    .players{
+                    grid-template-columns: repeat(2,1fr);
+                    }
+
+                    .player{
+                    flex-direction: column;
+                    }
+
+                    .blog{
+                    flex-direction: column;
+                    }
+
+                    .courses{
+
+                    grid-template-columns: repeat(2,1fr);
+                    flex-direction: column;
+
+                    }
+
+
+                    .blogs{
+                    grid-template-columns: repeat(2,1fr);
+                    }
+
+
+
+        }
+
+    
+
+
+        
 
         
 
@@ -255,40 +382,139 @@
 
         <section class="container">
 
-            <div class="courses">
                  
-                <h2>Lates Course</h2>
+                <h2 class="section-title">Lates Course</h2>
 
-                <article class="course">
-                      
-                    <div>
-                        <img src="images/courses/course-1.png" alt="">
+                <div class="courses">
+
+                    <div class="course">
+                        
+                        <div class="course-banner">
+
+                            <img src="images/courses/course-1.png" alt="">
+
+                        </div>
+
+                        <div class="course-detail">
+
+                            <h2 class="course-tittle">React - The Complete Guide 2020</h2>
+
+                            <p class="course-author">Guide 2020</p>
+
+                            <div class="course-info">
+
+                                <div class="rating">
+                                    <i class="fa-solid fa-star filled"></i>
+                                    <i class="fa-solid fa-star filled"></i>
+                                    <i class="fa-solid fa-star filled"></i>
+                                    <i class="fa-solid fa-star filled"></i>
+                                    <i class="fa-solid fa-star empty"></i>
+                                </div>
+
+                            <div class="value"> 4.5</div>
+
+                            <div class="course-duration">
+
+                                <i class="fa-solid fa-clock"></i>
+                                     01:30 hr
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="course">
+                        
+                        <div class="course-banner">
+
+                            <img src="images/courses/course-2.png" alt="">
+
+                        </div>
+
+                        <div class="course-detail">
+
+                            <h2 class="course-tittle">Powerpoint 2020 Master Powerpoint Cour</h2>
+
+                            <p class="course-author">Walter Scott</p>
+
+                            <div class="course-info">
+
+                                <div class="rating">
+                                    <i class="fa-solid fa-star filled"></i>
+                                    <i class="fa-solid fa-star filled"></i>
+                                    <i class="fa-solid fa-star filled"></i>
+                                    <i class="fa-solid fa-star filled"></i>
+                                    <i class="fa-solid fa-star empty"></i>
+                                </div>
+
+                            <div class="value"> 4.3</div>
+
+                            <div class="course-duration">
+
+                                <i class="fa-solid fa-clock"></i>
+                                     01:20 hr
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="course">
+                        
+                        <div class="course-banner">
+
+                            <img src="images/courses/course-3.png" alt="">
+
+                        </div>
+
+                        <div class="course-detail">
+
+                            <h2 class="course-tittle">The Complete JavaScript Course 2020</h2>
+
+                            <p class="course-author"> Reed Krakoff.</p>
+
+                            <div class="course-info">
+
+                                <div class="rating">
+                                    <i class="fa-solid fa-star filled"></i>
+                                    <i class="fa-solid fa-star filled"></i>
+                                    <i class="fa-solid fa-star filled"></i>
+                                    <i class="fa-solid fa-star filled"></i>
+                                    <i class="fa-solid fa-star empty"></i>
+                                </div>
+
+                            <div class="value"> 4.5</div>
+
+                            <div class="course-duration">
+
+                                <i class="fa-solid fa-clock"></i>
+                                     01:30 hr
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
                     </div>
 
-                    <div>
-                     
 
-                    </div>
+                </div>
 
-                    <div>
-                        <img src="images/courses/course-2.png" alt="">
-                    </div>
-
-                    <div>
-
-                    </div>
-                    <div>
-                         <img src="images/courses/course-3.png" alt="">
-                    </div>
-                    <div>
-
-                    </div>
+                
 
 
-                </article>
-
-
-            </div>
+            
 
 
 
